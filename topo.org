@@ -1,0 +1,17 @@
+* Data and Prepossessing
+
+** converting laz to las
+
+#+begin_src bash
+sudo pacman -S lib
+las2las -i input.laz -o output.las
+#+end_src
+
+** Converting point clouds to raster
+#+begin_src bash
+yay -s whitebox-tools
+whitebox_tools -r lidar_idw_interpolation -i test.las -o test.tif --parameter elevation --resolution 1.5 --weight 2.0 --radius 2.5
+#+end_src
+
+** Geotiff
+we end up with a [[https://earthdata.nasa.gov/esdis/eso/standards-and-references/geotiff][geotiff file]]
