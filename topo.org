@@ -1,4 +1,6 @@
 * Data and Prepossessing
+** Data sources
+https://www.planlaufterrain.com/LiDAR-Data-and-FAQ/
 
 ** converting laz to las
 
@@ -15,3 +17,9 @@ whitebox_tools -r lidar_idw_interpolation -i test.las -o test.tif --parameter el
 
 ** Geotiff
 we end up with a [[https://earthdata.nasa.gov/esdis/eso/standards-and-references/geotiff][geotiff file]]
+
+guide to using raster data
+https://www.earthdatascience.org/courses/use-data-open-source-python/intro-raster-data-python/fundamentals-raster-data/open-lidar-raster-python/
+* Model
+https://analyticsindiamag.com/how-to-implement-convolutional-autoencoder-in-pytorch-with-cuda/
+https://www.earthdatascience.org/courses/use-data-open-source-python/intro-raster-data-python/fundamentals-raster-data/open-lidar-raster-python/

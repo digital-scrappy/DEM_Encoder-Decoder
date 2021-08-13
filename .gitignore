@@ -1,0 +1,7 @@
+data/
+models/
+plots/
+*.pyc
+*~
+*.html
+poetry.lock
