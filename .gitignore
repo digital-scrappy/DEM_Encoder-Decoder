@@ -5,3 +5,4 @@ plots/
 *~
 *.html
 poetry.lock
+.ipynb_checkpoints/
