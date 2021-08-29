@@ -8,15 +8,15 @@ class ConvAE(nn.Module):
         super(ConvAE, self).__init__()
 
         # shape (1001, 1251, 1)
-        self.conv1 = nn.Conv2d(1, 24, 3, padding=1)
-        self.conv2 = nn.Conv2d(24, 16, 3, padding=1)
-        self.conv3 = nn.Conv2d(16, 4, 3, padding=1)
+        self.conv1 = nn.Conv2d(1, 24, 4, padding = 1)
+        self.conv2 = nn.Conv2d(24, 16, 4,padding = 1)
+        self.conv3 = nn.Conv2d(16, 4, 4, padding= 1)
 
         self.pool = nn.MaxPool2d(2,2)
 
-        self.t_conv1= nn.ConvTranspose2d(4, 16, 2, stride=2)
-        self.t_conv2= nn.ConvTranspose2d(16, 24, 2, stride=2)
-        self.t_conv3= nn.ConvTranspose2d(24, 1, 2, stride=2)
+        self.t_conv1= nn.ConvTranspose2d(4, 16, 2, stride=2, output_padding=1)
+        self.t_conv2= nn.ConvTranspose2d(16, 24, 2, stride=2, output_padding =1)
+        self.t_conv3= nn.ConvTranspose2d(24, 1, 2, stride=2, output_padding =1)
 
     def forward(self, x):
         x = F.relu(self.conv1(x))
