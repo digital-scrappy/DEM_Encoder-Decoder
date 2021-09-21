@@ -1,0 +1,39 @@
+* Digital Elevation Model Compression using an Autoencoder
+
+This is a small project for educational purposes and to showcase my current skills.
+
+I am trying to evaluate the feasibility of Autoencoders for the compression of digital elevation models.
+
+A model like this could help save bandwith in cloud based map applications.
+The smaller compressed representations make both storage and transmission of data easier. In such a scenario compression would happen on the server side with the encoder part of the network. and then on a mobile device the information could be decompressed using the decoder part of the network.
+
+Since compression like this is lossy, I would suggest to use such a system only for areas of the map which are not supposed to be in focus.
+
+
+
+
+* Current status
+The intitial architecture is working, and boilerplate training and testing loops are setup, but the model still fails to converge.
+** Data
+The data consists out of squares that I cut out of 5m resolution geotifs of the austrian counties Tyrol, Salzburg, and Carinthia. Each square has an area of 6.25km².
+*** Amount of collected datapoints
+| subset | #geotifs |
+|--------+----------|
+| train  |     2236 |
+| test   |      279 |
+| dev    |      279 |
+|--------+----------|
+| sum    |     2794 |
+
+** Roadmap
+
+- [X] Data Preprocessing Pipeline
+- [X] Data Loader
+- [X] Model Architecture
+- [X] Training and Testing loops
+- [ ] Additional data collection
+- [ ] Architecture Adjustments
+- [ ] Model Tuning
+
+** Architecture Improvements
+Currently the network is just a simple autoencoder, but also VAEs and other more  architectures could be considered.

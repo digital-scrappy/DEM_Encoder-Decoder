@@ -20,6 +20,12 @@ we end up with a [[https://earthdata.nasa.gov/esdis/eso/standards-and-references
 
 guide to using raster data
 https://www.earthdatascience.org/courses/use-data-open-source-python/intro-raster-data-python/fundamentals-raster-data/open-lidar-raster-python/
-* Model
-https://analyticsindiamag.com/how-to-implement-convolutional-autoencoder-in-pytorch-with-cuda/
-https://www.earthdatascience.org/courses/use-data-open-source-python/intro-raster-data-python/fundamentals-raster-data/open-lidar-raster-python/
+
+
+* Evaluation metrics
+** Structural Similarity Index (SSIM)
+used in this google paper: "Variable Rate Image Compression with Recurrent Neural Networks (ICLR, 2016)"
+
+** Multi-Scale Structural Similarity (MS-SSIM)
+
+**  Peak Signal-to-Noise Ratio — Human Visual System (PSNR-HVS)
