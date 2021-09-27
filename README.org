@@ -2,7 +2,7 @@
 
 This is a small project for educational purposes and to showcase my current skills.
 
-I am trying to evaluate the feasibility of Autoencoders for the compression of digital elevation models.
+I am evaluating the feasibility of Autoencoders for the compression of digital elevation models.
 
 A model like this could help save bandwith in cloud based map applications.
 The smaller compressed representations of DEMs in the middle of the network could make both storage and transmission of data easier. In such a scenario compression would happen on the server side with the encoder part of the network. and then on a mobile device the information could be decompressed using the decoder part of the network.
