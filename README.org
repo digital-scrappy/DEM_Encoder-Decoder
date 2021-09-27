@@ -13,7 +13,7 @@ Since compression like this is lossy, I would suggest to use such a system only 
 
 
 * Current status
-The intitial architecture is working, the boilerplate training and testing loops are setup, but the model still fails to converge.
+The initial architecture is working, the boilerplate training and testing loops are setup, but the model still fails to converge.
 ** Data
 The data consists out of squares that I cut out of 5m resolution geotifs of the austrian counties Tyrol, Salzburg, and Carinthia. Each square has an area of 6.25km².
 *** Amount of collected datapoints
